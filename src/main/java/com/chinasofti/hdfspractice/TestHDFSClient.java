@@ -27,8 +27,12 @@ public class TestHDFSClient {
          fs.create(new Path("/hellobyjava"));
 
         // 从hdfs上下载一个文件到本地
-        // 这个方法有两个参数，第一个是一个Path对象，传入的是下载位置，
-        // 第二个参数也是一个path对象，传入的是下载后保存的位置
+        // 从hdfs上下载一个文件到本地（；这里查看了一下API貌似有三个重载的方法）
+        // 这个方法有四个参数，
+        // 第一个参数：是否删除源文件，即复制完后，HDFS上的文件还要不要
+        // 第二个是一个Path对象，传入的是下载位置，
+        // 第三个参数也是一个path对象，传入的是下载后保存的位置
+        // 第四个参数：是否在本地创建CRC校验文件
         fs.copyToLocalFile(false,new Path("/hellohdfs/1.txt"),new Path("D:\\Practice_File\\java\\bigdata-practice\\src\\main"),true);
 
         //使用Stream的形式 操作HDFS 更底层的方式
