@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc645b74-d11e-4eec-9add-57bc063a3d22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/TestHDFSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/TestHDFSClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasofti/zkpractice/TestZKClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasofti/zkpractice/TestZKClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasofti/zkpractice/TestZKClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasofti/zkpractice/TestZKClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasofti/zkpractice/TestZKClint2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasofti/zkpractice/TestZKClint2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasofti/zkpractice/TestZKClint2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasofti/zkpractice/TestZKClint2.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,17 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+            <state relative-caret-position="230">
+              <caret line="10" selection-start-line="10" selection-end-line="75" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/TestHDFSClient.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="276">
+              <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,19 +48,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/StreamAccess.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+            <state relative-caret-position="191">
+              <caret line="31" column="6" lean-forward="true" selection-end-line="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/HdfsClient.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3128">
-              <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
+            <state relative-caret-position="253">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.4/hadoop-mapreduce-client-core-2.7.4.jar!/mapred-default.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="1627" column="10" lean-forward="true" selection-start-line="1627" selection-start-column="10" selection-end-line="1627" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -66,6 +89,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>local</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -75,10 +103,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chinasofti/zkpractice/TestZKClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasofti/zkpractice/TestZKClint2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasofti/zkpractice/ZKOthersAPI.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/StreamAccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/HdfsClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/TestHDFSClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountReducer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountDriver.java" />
       </list>
     </option>
   </component>
@@ -95,6 +126,22 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="my-bigdata-practice" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="my-bigdata-practice" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
@@ -114,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,27 +168,44 @@
               <item name="bigdata-practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="bigdata-practice" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bigdata-practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="bigdata-practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:2.7.4" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="bigdata-practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:2.7.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-mapreduce-client-core-2.7.4.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Practice_File\java\bigdata-practice\src\main\java\com\chinasofti\hdfspractice" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Practice_File\java\bigdata-practice\src\main\resources" />
       <recent name="D:\Practice_File\java\bigdata-practice\src\main\java\com\chinasofti\hdfspractice" />
     </key>
   </component>
@@ -158,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestHDFSClient">
+  <component name="RunManager" selected="Application.WordCountDriver">
     <configuration name="TestHDFSClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.chinasofti.hdfspractice.TestHDFSClient" />
       <module name="bigdata-practice" />
@@ -185,6 +248,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chinasofti.mapreducepractice.WordCountDriver" />
+      <module name="bigdata-practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chinasofti.mapreducepractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HdfsClient.testListFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bigdata-practice" />
       <extension name="coverage">
@@ -203,6 +279,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordCountDriver" />
         <item itemvalue="Application.TestHDFSClient" />
         <item itemvalue="JUnit.HdfsClient.testListFiles" />
         <item itemvalue="Application.TestZKClint2" />
@@ -223,7 +300,9 @@
       <workItem from="1557640333410" duration="3476000" />
       <workItem from="1557757089270" duration="680000" />
       <workItem from="1558834426374" duration="6372000" />
-      <workItem from="1561254604507" duration="2177000" />
+      <workItem from="1561254604507" duration="2330000" />
+      <workItem from="1562464541391" duration="6025000" />
+      <workItem from="1562476121684" duration="5395000" />
     </task>
     <task id="LOCAL-00001" summary="zookeeper练习01">
       <created>1557641586259</created>
@@ -246,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558843966861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="HDFS的javaAPI下载文件注释错误，修改">
+      <created>1561257159436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561257159436</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -255,13 +341,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13834000" />
+    <option name="totallyTimeSpent" value="25407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21907842" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3589329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -287,7 +372,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32983023" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -300,7 +385,8 @@
     <MESSAGE value="zookeeper练习01" />
     <MESSAGE value="zookeeper练习02" />
     <MESSAGE value="HDFS的javaAPI练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="HDFS的javaAPI练习" />
+    <MESSAGE value="HDFS的javaAPI下载文件注释错误，修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="HDFS的javaAPI下载文件注释错误，修改" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/zkpractice/TestZKClient.java">
@@ -328,27 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/StreamAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/HdfsClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3128">
-          <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.7.4/hadoop-common-2.7.4.jar!/org/apache/hadoop/fs/ChecksumFileSystem.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-276">
@@ -367,13 +432,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/HdfsClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/StreamAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/hdfspractice/TestHDFSClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="391">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.4/hadoop-mapreduce-client-core-2.7.4.jar!/org/apache/hadoop/mapreduce/Mapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.4/hadoop-mapreduce-client-core-2.7.4.jar!/org/apache/hadoop/mapred/Reducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.4/hadoop-mapreduce-client-core-2.7.4.jar!/org/apache/hadoop/mapreduce/Reducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="31" column="6" lean-forward="true" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="75" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasofti/mapreducepractice/WordCountDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.4/hadoop-mapreduce-client-core-2.7.4.jar!/mapred-default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="1627" column="10" lean-forward="true" selection-start-line="1627" selection-start-column="10" selection-end-line="1627" selection-end-column="10" />
         </state>
       </provider>
     </entry>
