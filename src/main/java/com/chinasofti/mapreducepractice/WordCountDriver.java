@@ -51,6 +51,7 @@ public class WordCountDriver {
 //        FileOutputFormat.setOutputPath(job,new Path("/wordcount/output"));
         /*
          * 本地运行语句
+         * 注意本地运行时输出目录也不能存在，否则也会报错
          */
         FileInputFormat.setInputPaths(job,"D:\\Practice_File\\hadoop_practice\\MapReduce\\input");
         FileOutputFormat.setOutputPath(job,new Path("D:\\Practice_File\\hadoop_practice\\MapReduce\\output"));
