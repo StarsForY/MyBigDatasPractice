@@ -128,4 +128,499 @@ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is depre
 		Bytes Read=822
 	File Output Format Counters 
 		Bytes Written=828
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+ INFO main org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+ INFO main org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local1034235138_0001
+ INFO main org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+ INFO main org.apache.hadoop.mapreduce.Job - Running job: job_local1034235138_0001
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+ INFO Thread-4 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local1034235138_0001_m_000000_0
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@7fa63faf
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Processing split: file:/D:/Practice_File/hadoop_practice/MapReduce/flowsum/input/HTTP_20130313143751.dat:0+2230
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.input.LineRecordReader - Found UTF-8 BOM and skipped it
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Starting flush of map output
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+ WARN Thread-4 org.apache.hadoop.mapred.LocalJobRunner - job_local1034235138_0001
+ java.lang.Exception: java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:32)
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main org.apache.hadoop.mapreduce.Job - Job job_local1034235138_0001 running in uber mode : false
+ INFO main org.apache.hadoop.mapreduce.Job -  map 0% reduce 0%
+ INFO main org.apache.hadoop.mapreduce.Job - Job job_local1034235138_0001 failed with state FAILED due to: NA
+ INFO main org.apache.hadoop.mapreduce.Job - Counters: 0
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+ INFO main org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+ INFO main org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local1350467753_0001
+ INFO main org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+ INFO main org.apache.hadoop.mapreduce.Job - Running job: job_local1350467753_0001
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+ INFO Thread-4 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local1350467753_0001_m_000000_0
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@551b82db
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Processing split: file:/D:/Practice_File/hadoop_practice/MapReduce/flowsum/input/HTTP_20130313143751.dat:0+2230
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.input.LineRecordReader - Found UTF-8 BOM and skipped it
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Starting flush of map output
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+ WARN Thread-4 org.apache.hadoop.mapred.LocalJobRunner - job_local1350467753_0001
+ java.lang.Exception: java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:32)
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main org.apache.hadoop.mapreduce.Job - Job job_local1350467753_0001 running in uber mode : false
+ INFO main org.apache.hadoop.mapreduce.Job -  map 0% reduce 0%
+ INFO main org.apache.hadoop.mapreduce.Job - Job job_local1350467753_0001 failed with state FAILED due to: NA
+ INFO main org.apache.hadoop.mapreduce.Job - Counters: 0
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+ INFO main org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+ INFO main org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local51972597_0001
+ INFO main org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+ INFO main org.apache.hadoop.mapreduce.Job - Running job: job_local51972597_0001
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+ INFO Thread-4 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local51972597_0001_m_000000_0
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@7cf5cac9
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Processing split: file:/D:/Practice_File/hadoop_practice/MapReduce/flowsum/input/HTTP_20130313143751.dat:0+2230
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.input.LineRecordReader - Found UTF-8 BOM and skipped it
+ INFO main org.apache.hadoop.mapreduce.Job - Job job_local51972597_0001 running in uber mode : false
+ INFO main org.apache.hadoop.mapreduce.Job -  map 0% reduce 0%
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Starting flush of map output
+ INFO communication thread org.apache.hadoop.mapred.LocalJobRunner - map > map
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+ INFO main org.apache.hadoop.mapreduce.Job -  map 3% reduce 0%
+ WARN Thread-4 org.apache.hadoop.mapred.LocalJobRunner - job_local51972597_0001
+ java.lang.Exception: java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:32)
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main org.apache.hadoop.mapreduce.Job - Job job_local51972597_0001 failed with state FAILED due to: NA
+ INFO main org.apache.hadoop.mapreduce.Job - Counters: 17
+	File System Counters
+		FILE: Number of bytes read=2437
+		FILE: Number of bytes written=285917
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=0
+		Input split bytes=151
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=255328256
+	File Input Format Counters 
+		Bytes Read=2230
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+ INFO main org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+ INFO main org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+ INFO main org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local90962260_0001
+ INFO main org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+ INFO main org.apache.hadoop.mapreduce.Job - Running job: job_local90962260_0001
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+ INFO Thread-4 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local90962260_0001_m_000000_0
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@255ff287
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Processing split: file:/D:/Practice_File/hadoop_practice/MapReduce/flowsum/input/HTTP_20130313143751.dat:0+2230
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.input.LineRecordReader - Found UTF-8 BOM and skipped it
+ INFO main org.apache.hadoop.mapreduce.Job - Job job_local90962260_0001 running in uber mode : false
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Starting flush of map output
+ INFO main org.apache.hadoop.mapreduce.Job -  map 0% reduce 0%
+ INFO communication thread org.apache.hadoop.mapred.LocalJobRunner - map > map
+ INFO main org.apache.hadoop.mapreduce.Job -  map 3% reduce 0%
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+ WARN Thread-4 org.apache.hadoop.mapred.LocalJobRunner - job_local90962260_0001
+ java.lang.Exception: java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:32)
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main org.apache.hadoop.mapreduce.Job - Job job_local90962260_0001 failed with state FAILED due to: NA
+ INFO main org.apache.hadoop.mapreduce.Job - Counters: 17
+	File System Counters
+		FILE: Number of bytes read=2437
+		FILE: Number of bytes written=285917
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=0
+		Input split bytes=151
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=255328256
+	File Input Format Counters 
+		Bytes Read=2230
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+ INFO main org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+ INFO main org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local864936822_0001
+ INFO main org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+ INFO main org.apache.hadoop.mapreduce.Job - Running job: job_local864936822_0001
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+ INFO Thread-4 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local864936822_0001_m_000000_0
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@5ca16c4e
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Processing split: file:/D:/Practice_File/hadoop_practice/MapReduce/flowsum/input/HTTP_20130313143751.dat:0+2230
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.input.LineRecordReader - Found UTF-8 BOM and skipped it
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Starting flush of map output
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+ WARN Thread-4 org.apache.hadoop.mapred.LocalJobRunner - job_local864936822_0001
+ java.lang.Exception: java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:32)
+	at com.chinasofti.mapreducepractice.flowsum.FlowSumMapper.map(FlowSumMapper.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main org.apache.hadoop.mapreduce.Job - Job job_local864936822_0001 running in uber mode : false
+ INFO main org.apache.hadoop.mapreduce.Job -  map 0% reduce 0%
+ INFO main org.apache.hadoop.mapreduce.Job - Job job_local864936822_0001 failed with state FAILED due to: NA
+ INFO main org.apache.hadoop.mapreduce.Job - Counters: 0
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+ INFO main org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+ INFO main org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local1833665205_0001
+ INFO main org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+ INFO main org.apache.hadoop.mapreduce.Job - Running job: job_local1833665205_0001
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+ INFO Thread-4 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local1833665205_0001_m_000000_0
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@16be0e74
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Processing split: file:/D:/Practice_File/hadoop_practice/MapReduce/flowsum/input/HTTP_20130313143751.dat:0+2230
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.input.LineRecordReader - Found UTF-8 BOM and skipped it
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - 
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Starting flush of map output
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Spilling map output
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - bufstart = 0; bufend = 789; bufvoid = 104857600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - kvstart = 26214396(104857584); kvend = 26214312(104857248); length = 85/6553600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Finished spill 0
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task - Task:attempt_local1833665205_0001_m_000000_0 is done. And is in the process of committing
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - map
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task - Task 'attempt_local1833665205_0001_m_000000_0' done.
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local1833665205_0001_m_000000_0
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - Waiting for reduce tasks
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local1833665205_0001_r_000000_0
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO pool-3-thread-1 org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@73584139
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.ReduceTask - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@41391435
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - MergerManager: memoryLimit=2649017600, maxSingleShuffleLimit=662254400, mergeThreshold=1748351744, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+ INFO EventFetcher for fetching Map Completion Events org.apache.hadoop.mapreduce.task.reduce.EventFetcher - attempt_local1833665205_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+ INFO localfetcher#1 org.apache.hadoop.mapreduce.task.reduce.LocalFetcher - localfetcher#1 about to shuffle output of map attempt_local1833665205_0001_m_000000_0 decomp: 835 len: 839 to MEMORY
+ INFO localfetcher#1 org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput - Read 835 bytes from map-output for attempt_local1833665205_0001_m_000000_0
+ INFO localfetcher#1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - closeInMemoryFile -> map-output of size: 835, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->835
+ INFO EventFetcher for fetching Map Completion Events org.apache.hadoop.mapreduce.task.reduce.EventFetcher - EventFetcher is interrupted.. Returning
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 821 bytes
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merged 1 segments, 835 bytes to disk to satisfy reduce memory limit
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 1 files, 839 bytes from disk
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 0 segments, 0 bytes from memory into reduce
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 821 bytes
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+ INFO pool-3-thread-1 org.apache.hadoop.conf.Configuration.deprecation - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Task - Task:attempt_local1833665205_0001_r_000000_0 is done. And is in the process of committing
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Task - Task attempt_local1833665205_0001_r_000000_0 is allowed to commit now
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local1833665205_0001_r_000000_0' to file:/D:/Practice_File/hadoop_practice/MapReduce/flowsum/output/_temporary/0/task_local1833665205_0001_r_000000
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Task - Task 'attempt_local1833665205_0001_r_000000_0' done.
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local1833665205_0001_r_000000_0
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - reduce task executor complete.
+ INFO main org.apache.hadoop.mapreduce.Job - Job job_local1833665205_0001 running in uber mode : false
+ INFO main org.apache.hadoop.mapreduce.Job -  map 100% reduce 100%
+ INFO main org.apache.hadoop.mapreduce.Job - Job job_local1833665205_0001 completed successfully
+ INFO main org.apache.hadoop.mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=6584
+		FILE: Number of bytes written=581192
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=22
+		Map output records=22
+		Map output bytes=789
+		Map output materialized bytes=839
+		Input split bytes=151
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=21
+		Reduce shuffle bytes=839
+		Reduce input records=22
+		Reduce output records=21
+		Spilled Records=44
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=510656512
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2230
+	File Output Format Counters 
+		Bytes Written=609
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+ INFO main org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+ WARN main org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+ INFO main org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local1250478008_0001
+ INFO main org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+ INFO main org.apache.hadoop.mapreduce.Job - Running job: job_local1250478008_0001
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+ INFO Thread-4 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local1250478008_0001_m_000000_0
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@16be0e74
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Processing split: file:/D:/Practice_File/hadoop_practice/MapReduce/flowsum/input/HTTP_20130313143751.dat:0+2230
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapreduce.lib.input.LineRecordReader - Found UTF-8 BOM and skipped it
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - 
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Starting flush of map output
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Spilling map output
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - bufstart = 0; bufend = 789; bufvoid = 104857600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - kvstart = 26214396(104857584); kvend = 26214312(104857248); length = 85/6553600
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.MapTask - Finished spill 0
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task - Task:attempt_local1250478008_0001_m_000000_0 is done. And is in the process of committing
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - map
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.Task - Task 'attempt_local1250478008_0001_m_000000_0' done.
+ INFO LocalJobRunner Map Task Executor #0 org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local1250478008_0001_m_000000_0
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - Waiting for reduce tasks
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local1250478008_0001_r_000000_0
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+ INFO pool-3-thread-1 org.apache.hadoop.yarn.util.ProcfsBasedProcessTree - ProcfsBasedProcessTree currently is supported only on Linux.
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@d69a511
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.ReduceTask - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5ca26e2a
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - MergerManager: memoryLimit=2649017600, maxSingleShuffleLimit=662254400, mergeThreshold=1748351744, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+ INFO EventFetcher for fetching Map Completion Events org.apache.hadoop.mapreduce.task.reduce.EventFetcher - attempt_local1250478008_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+ INFO localfetcher#1 org.apache.hadoop.mapreduce.task.reduce.LocalFetcher - localfetcher#1 about to shuffle output of map attempt_local1250478008_0001_m_000000_0 decomp: 835 len: 839 to MEMORY
+ INFO localfetcher#1 org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput - Read 835 bytes from map-output for attempt_local1250478008_0001_m_000000_0
+ INFO localfetcher#1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - closeInMemoryFile -> map-output of size: 835, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->835
+ INFO EventFetcher for fetching Map Completion Events org.apache.hadoop.mapreduce.task.reduce.EventFetcher - EventFetcher is interrupted.. Returning
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 821 bytes
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merged 1 segments, 835 bytes to disk to satisfy reduce memory limit
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 1 files, 839 bytes from disk
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 0 segments, 0 bytes from memory into reduce
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 821 bytes
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+ INFO pool-3-thread-1 org.apache.hadoop.conf.Configuration.deprecation - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Task - Task:attempt_local1250478008_0001_r_000000_0 is done. And is in the process of committing
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Task - Task attempt_local1250478008_0001_r_000000_0 is allowed to commit now
+ INFO pool-3-thread-1 org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local1250478008_0001_r_000000_0' to file:/D:/Practice_File/hadoop_practice/MapReduce/flowsum/output/_temporary/0/task_local1250478008_0001_r_000000
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.Task - Task 'attempt_local1250478008_0001_r_000000_0' done.
+ INFO pool-3-thread-1 org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local1250478008_0001_r_000000_0
+ INFO Thread-4 org.apache.hadoop.mapred.LocalJobRunner - reduce task executor complete.
+ INFO main org.apache.hadoop.mapreduce.Job - Job job_local1250478008_0001 running in uber mode : false
+ INFO main org.apache.hadoop.mapreduce.Job -  map 100% reduce 100%
+ INFO main org.apache.hadoop.mapreduce.Job - Job job_local1250478008_0001 completed successfully
+ INFO main org.apache.hadoop.mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=6584
+		FILE: Number of bytes written=581150
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=22
+		Map output records=22
+		Map output bytes=789
+		Map output materialized bytes=839
+		Input split bytes=151
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=21
+		Reduce shuffle bytes=839
+		Reduce input records=22
+		Reduce output records=21
+		Spilled Records=44
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=510656512
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2230
+	File Output Format Counters 
+		Bytes Written=567
  
